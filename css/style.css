@@ -1,5 +1,6 @@
 body, document {
   margin: 0 auto;
+  width: 100vw;
   font-family: 'Quicksand', sans-serif;
 }
 
@@ -24,6 +25,11 @@ header {
   padding: 10px;
 }
 
+img {
+  width: 100%;
+  height: auto;
+}
+
 .logo {
   font-size: 2.5em;
   font-family: 'Megrim', cursive;
@@ -34,6 +40,10 @@ header {
 #name {
   color: #ff0291;
   text-shadow: 2px 2px #17ffe2;
+}
+
+.outer {
+  width: 100%;
 }
 
 .projects {
@@ -63,8 +73,8 @@ header {
 }
 
 .skill {
-  height: 100px;
-  width: 100px;
+  height: auto;
+  flex: 1;
   border: black solid 1px;
 }
 
