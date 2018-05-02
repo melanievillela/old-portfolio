@@ -1,0 +1,75 @@
+body, document {
+  margin: 0 auto;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.column {
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.flex {
+  display: flex;
+}
+
+h1, h2 {
+  margin: 10px;
+}
+
+header {
+  width: 100%;
+  justify-content: center;
+  background-color: #abff02;
+  padding: 10px;
+}
+
+.logo {
+  font-size: 2.5em;
+  font-family: 'Megrim', cursive;
+  font-weight: bold;
+  color: #2a2a2a;
+}
+
+#name {
+  color: #ff0291;
+  text-shadow: 2px 2px #17ffe2;
+}
+
+.projects {
+  width: 100%;
+  background-color: #17ffe2;
+  padding: 10px;
+}
+
+.project {
+  height: 100px;
+  width: 100%;
+  margin: 10px;
+  border: black solid 1px;
+}
+
+.portrait {
+  height: 200px;
+  width: 100%;
+  background-color: #ff0291;
+  border: black solid 1px;
+}
+
+.skills {
+  width: 100%;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.skill {
+  height: 100px;
+  width: 100px;
+  border: black solid 1px;
+}
+
+#title {
+  color: #2a2a2a;
+}
+
+{border: solid red 1px;}
