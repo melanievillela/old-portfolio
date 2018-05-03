@@ -37,13 +37,12 @@ header {
   width: 100%;
   justify-content: center;
   background-color: #abff02;
-  padding: 10px;
 }
 
 img {
   width: 100%;
   height: auto;
-  padding-top: 15px;
+  padding-top: 25px;
 }
 
 .logo {
@@ -58,7 +57,7 @@ img {
 }
 
 .outer {
-  width: 100%;
+  width: 100vw;
 }
 
 .portrait {
@@ -70,28 +69,49 @@ img {
 .projects {
   width: 100%;
   background-color: #17ffe2;
-  padding: 10px;
-}
-
-.project {
+  padding: 15px;
 }
 
 .skills {
   width: 100%;
   justify-content: space-around;
-  padding: 10px;
 }
 
 .skill {
   height: auto;
-  flex: 1;
-}
-
-.svg {
-  padding: 10px;
 }
 
 #work {
   color: #d502ff;
   text-shadow: 2px 2px #abff02;
+}
+
+@media only screen and (min-width: 600px) {
+  header {
+    flex-direction: row !important;
+  }
+
+  .outer {
+    flex-direction: row !important;
+    flex-wrap: wrap;
+    align-items: stretch;
+  }
+
+  .portrait {
+    flex: 1 0 50%;
+  }
+
+  #self {
+    max-width: 70%;
+  }
+
+  .skills {
+    flex-direction: column;
+    flex: 1 0 50%;
+    align-items: center;
+  }
+
+  .skill {
+    max-width: 20%;
+  }
 }
