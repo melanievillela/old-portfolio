@@ -1,10 +1,12 @@
 a {
   color: #d502ff;
   text-decoration: none;
+  padding: 0 15px;
 }
 
-a:first-child {
-  color: #abff02;
+a:hover {
+  color: #2a2a2a;
+  font-weight: bold;
 }
 
 body, document {
@@ -30,7 +32,7 @@ h1, h2 {
 }
 
 h3 {
-  color: white;
+  color: #2a2a2a;
 }
 
 header {
