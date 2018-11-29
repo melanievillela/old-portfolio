@@ -7,22 +7,30 @@
 	<title>Melanie Villela</title>
 	<link rel="stylesheet" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Megrim|Quicksand" rel="stylesheet">
-
-</head>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous"></head>
 <body>
-	<div class="flex column outer">
-<!--Header-->
-	  <header class="flex column">
-	    <h2 class="logo">MV</h2>
-	    <h1 id="name">Melanie Villela</h1>
-	    <h2 id="title">Front End Vixen</h2>
-	  </header>
-<!--Portrait-->
+	<!--Header-->
+	<header class="flex fixed">
+		<div class="flex">
+			<h2 class="logo">MV</h2>
+			<h1 id="name">Melanie Villela</h1>
+			<h2 id="title">Front End Vixen</h2>
+		</div> 
+		<div class="flex">
+			<a href="https://www.linkedin.com/in/melanie-villela-62381574/" target="_blank"><i class="fab fa-linkedin"></i></a>
+			<a href="https://github.com/melanievillela/" target="_blank"><i class="fab fa-github"></i></a>
+			<a href="tel:713-366-2532"><i class="fas fa-phone"></i></a>
+			<a href="mailto:melanienvillela@gmail.com"><i class="far fa-envelope"></i></a>
+		</div>
+	</header>
+		
+	<div class="flex outer">
+		<!--Portrait-->
 	  <section class="flex column portrait">
 			<img src="img/mel_minify.svg" id="self"/>
 			<p>Artwork by <a href="https://www.linkedin.com/in/chenfrances/" target="_blank">Frances Chen</a></p>
 	  </section>
-<!--Skills-->
+		<!--Skills-->
 	  <section class="flex skills">
 	    <div class="flex column skill">
 	    	<img src="img/html5.png" alt="html5-logo"/>
@@ -37,7 +45,7 @@
 				<p>Javascript</p>
 	    </div>
 	  </section>
-<!--Projects-->
+		<!--Projects-->
 		<!--Art Crawl-->
 	  <section class="flex column projects">
 	    <h2 id="work">Featured Work</h2>
@@ -57,8 +65,18 @@
 					<a href="https://github.com/melanievillela/memory-game">Github</a>				
 					<a href="https://melanievillela.github.io/memory-game/">Live</a>
 				</span>
+			</div>
+			<!--Timezone Clock-->
+			<div class="flex column project">
+				<img src="img/timezones.png" alt="US-timezones-png"/>
+				<h3>US Timezones</h3>
+				<span>
+					<a href="https://github.com/melanievillela/US-time-zone-clock">Github</a>				
+					<a href="https://melanievillela.github.io/US-time-zone-clock/">Live</a>
+				</span>
 	    </div>
-	  </section>
+		</section>
 	</div>
 </body>
+	<script src="./js/script.js"></script>
 </html>
