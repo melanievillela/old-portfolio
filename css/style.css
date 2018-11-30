@@ -12,6 +12,22 @@ a:hover {
   padding: 0 15px;
 }
 
+.about {
+  background-color: #abff02;
+  width: 100%;
+}
+
+.about h2 {
+  color: #2a2a2a;
+  text-shadow: 2px 2px #17ffe2;
+  padding: 15px;
+}
+
+.about p {
+  line-height: 1.75;
+  width: 80%;
+}
+
 body, document {
   margin: 0 auto;
   width: 100vw;
@@ -70,13 +86,17 @@ i {
 img {
   width: 90%;
   height: auto;
-  padding-top: 25px;
 }
 
 .logo {
   font-size: 2.5em;
   font-family: 'Megrim', cursive;
   font-weight: bold;
+}
+
+#map {
+  max-width: 800px;
+  margin: 30px 15px 50px 15px;
 }
 
 #name {
@@ -99,32 +119,45 @@ img {
 .projects {
   width: 100%;
   background-color: #17ffe2;
-  padding: 15px 10px 30px 10px;
+}
+
+.projects h2 {
+  color: #2a2a2a;
+  text-shadow: 2px 2px #abff02;
+  padding: 15px;
 }
 
 #self {
-  max-width: 70%;
+  max-width: 75%;
 }
 
 .skills {
-  flex-direction: column;
   flex: 1 0 50%;
+  justify-content: center;
   align-items: center;
+  padding: 25px 0;
 }
 
 .skill {
   height: auto;
-  max-width: 20%;
+  max-width: 50%;
 }
 
-#work {
-  color: #ff0291;
-  text-shadow: 2px 2px #abff02;
+span {
+  padding-bottom: 15px;
 }
 
 @media only screen and (max-width: 730px) {
   .outer {
     padding-top: 100px;
+  }
+
+  .portrait {
+    padding-top: 25px;
+  }
+
+  #self {
+    max-width: 90%;
   }
 }
 
@@ -142,15 +175,15 @@ img {
   .outer {
     flex-direction: column;
     align-content: center;
+    padding-top: 135px;
   }
 
   .portrait {
-    padding-top: 50px;
+    padding: 20px 0;
   }
 
-  .skills {
-    flex-direction: row;
-    justify-content: space-evenly;
+  #self {
+    max-width: 70%;
   }
 }
 
@@ -158,8 +191,8 @@ img {
   header> .flex {
     font-size: .7em;
   }
-
+ 
   .outer {
-    padding-top: 70px;
+    padding-top: 100px;
   }
 }
