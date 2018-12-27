@@ -51,6 +51,11 @@ body, document {
   color: #2a2a2a;
 }
 
+.close {
+  cursor: pointer;
+  padding: 0 !important;
+}
+
 .column {
   flex-direction: column;
   justify-content: space-evenly;

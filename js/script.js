@@ -1,6 +1,10 @@
 //Resize Font Awesome icons depending on screensize
 window.addEventListener("resize", resizeScreen);
 
+//Add "X" to modal on smaller screensize
+window.addEventListener("resize", closeModal);
+
+//Resize Screen
 function resizeScreen() {
     const icons = document.querySelectorAll("i");
 
@@ -17,10 +21,7 @@ function resizeScreen() {
     }
 };
 
-resizeScreen();
-
 //Show modal
-let modal = document.querySelector(".modal");
 let projects = document.querySelectorAll(".project");
 
 projects.forEach((project) => {
@@ -30,9 +31,21 @@ projects.forEach((project) => {
             this.children[1].classList.add("hide");
         })
     });
-    /*
-    project.children[1].children[0].addEventListener("click", function() {
-        this.parentElement.classList.add("hide");
-    });
-    */
 });
+
+//Manually close modal
+function closeModal() {
+    const closeIcon = document.querySelectorAll(".close");
+
+    if (window.screen.width < 900) {
+        closeIcon.forEach(icon => {
+            icon.classList.remove("hide");
+            icon.addEventListener("click", function() {
+                this.parentNode.classList.add("hide");
+            })
+        })
+    }    
+};
+
+resizeScreen();
+closeModal();
