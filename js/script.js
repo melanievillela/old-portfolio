@@ -26,8 +26,13 @@ let projects = document.querySelectorAll(".project");
 projects.forEach((project) => {
     project.addEventListener("mouseenter", function() {
         this.children[1].classList.remove("hide");
+        this.addEventListener("mouseleave", function() {
+            this.children[1].classList.add("hide");
+        })
     });
+    /*
     project.children[1].children[0].addEventListener("click", function() {
         this.parentElement.classList.add("hide");
     });
+    */
 });
