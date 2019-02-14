@@ -7,6 +7,9 @@ window.addEventListener("resize", closeModal);
 //Resize Screen
 function resizeScreen() {
     const icons = document.querySelectorAll("i");
+    const outer = document.querySelector("#outer");
+    const headerHeight = document.querySelector("header").clientHeight;
+    outer.style.top = `${headerHeight}px`;
 
     if (window.screen.width < 730) {
         icons.forEach(icon => {

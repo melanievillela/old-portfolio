@@ -18,10 +18,6 @@ a:hover {
   padding: 0 15px;
 }
 
-span {
-  padding: 15px;
-}
-
 span a:nth-child(1) {
   padding: 15px !important;
 }
@@ -140,12 +136,14 @@ img {
 #name {
   color: #ff0291;
   text-shadow: 2px 2px #17ffe2;
+  animation-name: slide-in;
+  animation-duration: 3s;
 }
 
-.outer {
+#outer {
   flex-wrap: wrap;
   width: 100vw;
-  padding-top: 75px;
+  position: absolute;
 }
 
 .portrait {
@@ -179,6 +177,10 @@ img {
   padding: 15px;
 }
 
+.pulse:hover {
+  transform: scale(1.05, 1.05);
+}
+
 #self {
   max-width: 75%;
 }
@@ -195,6 +197,15 @@ img {
   max-width: 50%;
 }
 
+span {
+  padding: 15px;
+}
+
+@keyframes slide-in {
+  from {transform: translate(-500px)}
+  to {transform: translate(0)}
+}
+
 @media only screen and (max-width: 900px) {  
   .modal {
     position: fixed;
@@ -205,29 +216,26 @@ img {
   }
 }
 
-@media only screen and (max-width: 730px) {  
+@media only screen and (max-width: 700px) {  
   h3 {
     margin: 16px;
-  }
-
-  .outer {
-    padding-top: 100px;
   }
   
   .project p {
     font-size: 14px;
   }
 
-  .portrait {
-    padding-top: 25px;
-  }
-
   #self {
     max-width: 90%;
   }
+
+  @keyframes slide-in {
+    from {transform: translate(-250px)}
+    to {transform: translate(0)}
+  }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 490px) {
   h3 {
     font-size: 24px;
   }
@@ -235,17 +243,16 @@ img {
   header {
     flex-direction: column;
     justify-content: center;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
   }
 
   header> .flex {
     width: 100% !important;
   }
   
-  .outer {
+  #outer {
     flex-direction: column;
     align-content: center;
-    padding-top: 135px;
   }
 
   .portrait {
@@ -260,10 +267,6 @@ img {
 @media only screen and (max-width: 380px) {
   header> .flex {
     font-size: .7em;
-  }
- 
-  .outer {
-    padding-top: 100px;
   }
 }
 
