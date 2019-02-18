@@ -154,7 +154,7 @@ img {
 
 .project {
   position: relative;
-  width: 80%;
+  width: 95%;
   margin-bottom: 5%; 
 }
 
@@ -257,6 +257,10 @@ span {
 
   .portrait {
     padding: 20px 0;
+  }
+
+  .project {
+    width: 100%;
   }
 
   #self {
