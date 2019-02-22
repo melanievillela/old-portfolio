@@ -23,14 +23,13 @@ span a:nth-child(1) {
 }
 
 .about {
-  background-color: #abff02;
-  width: 100%;
-  padding-bottom: 15px;
+  flex: 1 0 50%;
+  background-color: #17ffe2;
 }
 
 .about h2 {
   color: #2a2a2a;
-  text-shadow: 2px 2px #17ffe2;
+  text-shadow: 2px 2px #abff02;
   padding: 15px;
 }
 
@@ -58,17 +57,29 @@ body, document {
   align-items: center;
 }
 
-.fixed {
-  position: fixed;
-}
-
 .flex {
   display: flex;
 }
 
+.green {
+  color: 	#abff02;
+}
+
+h1 {
+  font-family: 'Frijole', cursive;
+  font-size: 4em;
+  font-weight: lighter;
+  color: #ff0291;
+  text-shadow:2px 2px #2a2a2a;
+  margin: 15px;
+}
+
 h1, h2 {
-  margin: 10px;
   text-align: center;
+}
+
+h2 {
+  margin: 10px;
 }
 
 h3 {
@@ -79,6 +90,8 @@ h3 {
 
 header {
   width: 100vw;
+  position: sticky;
+  top: 0;
   background-color: #abff02;
   min-height: 75px;
   z-index: 100;
@@ -111,6 +124,10 @@ img {
   height: auto;
 }
 
+img.pulse {
+  width: 75%;
+}
+
 .logo {
   font-size: 2.5em;
   font-family: 'Megrim', cursive;
@@ -134,16 +151,20 @@ img {
 }
 
 #name {
-  color: #ff0291;
-  text-shadow: 2px 2px #17ffe2;
+  display: flex;
+  flex-direction: column;
   animation-name: slide-in;
-  animation-duration: 3s;
+  animation-duration: 2s;
+}
+
+#name > div.flex {
+  justify-content: center;
 }
 
 #outer {
   flex-wrap: wrap;
   width: 100vw;
-  position: absolute;
+  position: relative;
 }
 
 .portrait {
@@ -168,12 +189,12 @@ img {
 
 .projects {
   width: 100%;
-  background-color: #17ffe2;
+  background-color: #abff02;
 }
 
 .projects h2 {
   color: #2a2a2a;
-  text-shadow: 2px 2px #abff02;
+  text-shadow: 2px 2px #17ffe2;;
   padding: 15px;
 }
 
@@ -181,61 +202,46 @@ img {
   transform: scale(1.05, 1.05);
 }
 
-#self {
-  max-width: 75%;
+.purple {
+  color: #8900ff;
 }
 
 .skills {
-  flex: 1 0 50%;
+  width: 100%;
   justify-content: center;
   align-items: center;
-  padding-top: 15px;
 }
 
-.skill {
-  height: auto;
-  max-width: 50%;
+.skills-row {
+  width: 100%;
+  margin-top: 25px;
+  justify-content: space-evenly;
 }
 
 span {
   padding: 15px;
 }
 
+.text {
+  font-family: 'Love Ya Like A Sister', cursive;
+}
+
+.text-2 {
+  font-family: 'Luckiest Guy', cursive;
+}
+
 @keyframes slide-in {
-  from {transform: translate(-500px)}
+  from {transform: translate(500px)}
   to {transform: translate(0)}
 }
 
-@media only screen and (max-width: 900px) {  
-  .modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    padding-top: 20px;
+@media only screen and (max-width: 950px) {
+  h1 {
+    font-size: 3em;
   }
 }
 
-@media only screen and (max-width: 700px) {  
-  h3 {
-    margin: 16px;
-  }
-  
-  .project p {
-    font-size: 14px;
-  }
-
-  #self {
-    max-width: 90%;
-  }
-
-  @keyframes slide-in {
-    from {transform: translate(-250px)}
-    to {transform: translate(0)}
-  }
-}
-
-@media only screen and (max-width: 490px) {
+@media only screen and (max-width: 800px) {
   h3 {
     font-size: 24px;
   }
@@ -249,28 +255,53 @@ span {
   header> .flex {
     width: 100% !important;
   }
+
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    padding-top: 20px;
+  }
   
   #outer {
     flex-direction: column;
     align-content: center;
   }
 
-  .portrait {
-    padding: 20px 0;
-  }
-
   .project {
     width: 100%;
   }
+}
 
-  #self {
-    max-width: 70%;
+@media only screen and (max-width: 700px) {  
+  h3 {
+    margin: 16px;
+  }
+  
+  .project p {
+    font-size: 14px;
+  }
+
+  @keyframes slide-in {
+    from {transform: translate(-250px)}
+    to {transform: translate(0)}
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  h1 {
+    font-size: 1.5em;
   }
 }
 
 @media only screen and (max-width: 380px) {
   header> .flex {
     font-size: .7em;
+  }
+
+  h1 {
+    font-size: 1em;
   }
 }
 

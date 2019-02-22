@@ -7,9 +7,6 @@ window.addEventListener("resize", closeModal);
 //Resize Screen
 function resizeScreen() {
     const icons = document.querySelectorAll("i");
-    const outer = document.querySelector("#outer");
-    const headerHeight = document.querySelector("header").clientHeight;
-    outer.style.top = `${headerHeight}px`;
 
     if (window.screen.width < 730) {
         icons.forEach(icon => {
@@ -49,6 +46,26 @@ function closeModal() {
         })
     }    
 };
+
+//Change letter colors & fonts in name
+const letters = document.querySelectorAll("h1");
+
+changeColors = () => {
+    const random = Math.floor((Math.random() * letters.length));
+    if (random % 2 == 0) {
+        letters[random].classList.toggle("purple");
+    } else {letters[random].classList.toggle("green")}
+}
+
+changeFont = () => {
+    const random = Math.floor((Math.random() * letters.length));
+    if (random % 2 == 0) {
+        letters[random].classList.toggle("text");
+    } else {letters[random].classList.toggle("text-2")}
+}
+
+window.setInterval(changeColors, 250);
+window.setInterval(changeFont, 250);
 
 resizeScreen();
 closeModal();
