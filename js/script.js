@@ -47,6 +47,7 @@ function closeModal() {
     }    
 };
 
+
 //Change letter colors & fonts in name
 const letters = document.querySelectorAll("h1");
 
@@ -57,15 +58,8 @@ changeColors = () => {
     } else {letters[random].classList.toggle("green")}
 }
 
-changeFont = () => {
-    const random = Math.floor((Math.random() * letters.length));
-    if (random % 2 == 0) {
-        letters[random].classList.toggle("text");
-    } else {letters[random].classList.toggle("text-2")}
-}
+window.setInterval(changeColors, 300);
 
-window.setInterval(changeColors, 250);
-window.setInterval(changeFont, 250);
 
 resizeScreen();
 closeModal();

@@ -23,7 +23,7 @@ span a:nth-child(1) {
 }
 
 .about {
-  flex: 1 0 50%;
+  width: 50%;
   background-color: #17ffe2;
 }
 
@@ -71,7 +71,7 @@ h1 {
   font-weight: lighter;
   color: #ff0291;
   text-shadow:2px 2px #2a2a2a;
-  margin: 15px;
+  margin: 1.75px;
 }
 
 h1, h2 {
@@ -128,6 +128,24 @@ img.pulse {
   width: 75%;
 }
 
+.learning {
+  background-color: #ff0291;
+  width: 100%;
+}
+
+.learning p {
+  color: white;
+  line-height: 1.75;
+  width: 80%;
+  padding-bottom: 15px;
+}
+
+.learning h2 {
+  color: #abff02;
+  text-shadow: 2px 2px #2a2a2a;
+  padding: 15px;
+}
+
 .logo {
   font-size: 2.5em;
   font-family: 'Megrim', cursive;
@@ -168,7 +186,7 @@ img.pulse {
 }
 
 .portrait {
-  flex: 1 0 50%;
+  width: 50%;
   background-color: #ff0291;
   color: white;
 }
@@ -194,7 +212,7 @@ img.pulse {
 
 .projects h2 {
   color: #2a2a2a;
-  text-shadow: 2px 2px #17ffe2;;
+  text-shadow: 2px 2px #17ffe2;
   padding: 15px;
 }
 
@@ -222,40 +240,40 @@ span {
   padding: 15px;
 }
 
-.text {
-  font-family: 'Love Ya Like A Sister', cursive;
-}
-
-.text-2 {
-  font-family: 'Luckiest Guy', cursive;
-}
-
 @keyframes slide-in {
   from {transform: translate(500px)}
   to {transform: translate(0)}
 }
 
 @media only screen and (max-width: 950px) {
-  h1 {
-    font-size: 3em;
+  .about {
+    order: 1;
+    width: 100%;
+  }
+
+  .learning {
+    order: 4;
+  }
+
+  .portrait {
+    order: 2;
+    width: 100%;
+  }
+
+  .projects {
+    order: 5;
+  }
+
+  #self {
+    max-height: 100vh;
+  }
+  
+  .skills {
+    order: 3;
   }
 }
 
 @media only screen and (max-width: 800px) {
-  h3 {
-    font-size: 24px;
-  }
-
-  header {
-    flex-direction: column;
-    justify-content: center;
-    padding-bottom: 15px;
-  }
-
-  header> .flex {
-    width: 100% !important;
-  }
-
   .modal {
     position: fixed;
     top: 0;
@@ -274,7 +292,11 @@ span {
   }
 }
 
-@media only screen and (max-width: 700px) {  
+@media only screen and (max-width: 600px) { 
+  h1 {
+    font-size: 3em;
+  } 
+
   h3 {
     margin: 16px;
   }
@@ -289,19 +311,13 @@ span {
   }
 }
 
-@media only screen and (max-width: 550px) {
-  h1 {
-    font-size: 1.5em;
-  }
-}
-
 @media only screen and (max-width: 380px) {
   header> .flex {
     font-size: .7em;
   }
 
   h1 {
-    font-size: 1em;
+    font-size: 2.5em;
   }
 }
 
