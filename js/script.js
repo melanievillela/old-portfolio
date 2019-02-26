@@ -47,7 +47,6 @@ function closeModal() {
     }    
 };
 
-
 //Change letter colors & fonts in name
 const letters = document.querySelectorAll("h1");
 
@@ -59,7 +58,6 @@ changeColors = () => {
 }
 
 window.setInterval(changeColors, 300);
-
 
 resizeScreen();
 closeModal();
