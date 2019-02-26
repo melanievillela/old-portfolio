@@ -173,6 +173,7 @@ img.pulse {
   flex-direction: column;
   animation-name: slide-in;
   animation-duration: 2s;
+  margin-top: 15px;
 }
 
 #name > div.flex {
@@ -318,10 +319,6 @@ span {
 
   h1 {
     font-size: 2.5em;
-  }
-
-  .name {
-    margin-top: 15px;
   }
 }
 
