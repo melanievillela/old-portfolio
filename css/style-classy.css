@@ -182,6 +182,8 @@ img.pulse {
   position: relative;
   width: 95%;
   margin-bottom: 5%; 
+  border: dotted;
+  border-color: #6D6875;
 }
 
 .project p {
