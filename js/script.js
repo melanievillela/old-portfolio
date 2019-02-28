@@ -57,6 +57,20 @@ changeColors = () => {
     } else {letters[random].classList.toggle("green")}
 }
 
+//Change style sheet
+const magic = document.getElementById("stylize");
+
+magic.addEventListener("click", function() {
+    const styleSheet = document.head.children[4];
+    
+    if (styleSheet.getAttribute("href") === "css/style-classy.css") {
+        styleSheet.setAttribute("href", "css/style-funky.css")
+    } 
+    else {console.log("Funky")      
+        styleSheet.setAttribute("href", "css/style-classy.css")
+    }
+})
+
 window.setInterval(changeColors, 300);
 
 resizeScreen();
