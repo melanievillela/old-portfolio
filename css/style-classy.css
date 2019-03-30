@@ -1,0 +1,330 @@
+a:hover {
+  font-weight: bold;
+}
+
+.modal a {
+  color: #B5838D !important;
+  padding: 0 !important;
+  text-decoration: none;
+}
+
+.portrait a {
+  color: #6D6875;
+  text-decoration: none;
+}
+
+span a:nth-child(1) {
+  padding: 15px !important;
+}
+
+.about {
+  width: 50%;
+  background-color: #FFDAC7;
+}
+
+.about h2 {
+  color: #2a2a2a;
+  padding: 15px;
+}
+
+.about p {
+  line-height: 1.75;
+  width: 80%;
+}
+
+body, document {
+  margin: 0 auto;
+  width: 100vw;
+  overflow-x: hidden;
+  font-family: 'Quicksand', sans-serif;
+  color: #2a2a2a;
+}
+
+.close {
+  cursor: pointer;
+  padding: 0 !important;
+}
+
+.column {
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.flex {
+  display: flex;
+}
+
+h1 {
+  font-family: 'Monoton', cursive;
+  font-size: 4em;
+  font-weight: lighter;
+  color: #2a2a2a;
+  margin: 1.75px;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+h2 {
+  margin: 10px;
+}
+
+h3 {
+  color: #2a2a2a;
+  font-size: 24px;
+  text-align: center;
+}
+
+header {
+  width: 100vw;
+  position: sticky;
+  top: 0;
+  background-color: #E5989B;
+  min-height: 75px;
+  z-index: 100;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+header> div:first-child {
+  width: 70%;
+}
+
+header> div:nth-child(2) {
+  width: 30%;
+  margin-right: 5px;
+}
+
+header> .flex {
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.hide {
+  display: none !important;
+}
+
+i {
+  color: #2a2a2a;
+  padding: 5px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  filter: grayscale(100%);
+}
+
+img.pulse {
+  width: 75%;
+}
+
+.learning {
+  background-color: #FFB4A2;
+  width: 100%;
+}
+
+.learning p {
+  color: #2a2a2a;
+  line-height: 1.75;
+  width: 80%;
+  padding-bottom: 15px;
+}
+
+.learning h2 {
+  color: #2a2a2a;
+  padding: 15px;
+}
+
+.modal {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: 1;
+  font-weight: bold;
+  background-color: #FFDAC7;
+  box-shadow: 5px 5px 5px #2a2a2a;
+  overflow: auto;
+}
+
+#name {
+  display: flex;
+  flex-direction: column;
+  animation-name: slide-in;
+  animation-duration: 2s;
+  margin-top: 15px;
+}
+
+#name > div.flex {
+  justify-content: center;
+}
+
+#outer {
+  flex-wrap: wrap;
+  width: 100vw;
+  position: relative;
+}
+
+.portrait {
+  width: 50%;
+  background-color: #FFB4A2;
+  color: #2a2a2a;
+}
+
+.project {
+  position: relative;
+  width: 95%;
+  margin-bottom: 5%; 
+  border: dotted;
+  border-color: #6D6875;
+}
+
+.project p {
+  padding: 0 5%;
+  margin: 0;
+  line-height: 1.75;
+  font-size: 18px;
+  height: auto;
+}
+
+.projects {
+  width: 100%;
+}
+
+.projects h2 {
+  color: #2a2a2a;
+  padding: 15px;
+}
+
+.pulse:hover {
+  transform: scale(1.05, 1.05);
+}
+
+.skills {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills-row {
+  width: 100%;
+  margin-top: 25px;
+  justify-content: space-evenly;
+}
+
+span {
+  padding: 15px;
+}
+
+#stylize {
+  color: white;
+}
+
+#stylize:hover {
+  cursor: pointer;
+}
+
+@keyframes slide-in {
+  from {transform: translate(500px)}
+  to {transform: translate(0)}
+}
+
+@media only screen and (max-width: 950px) {
+  .about {
+    order: 1;
+    width: 100%;
+  }
+
+  .learning {
+    order: 4;
+  }
+
+  .portrait {
+    order: 2;
+    width: 100%;
+  }
+
+  .projects {
+    order: 5;
+  }
+
+  #self {
+    max-height: 100vh;
+  }
+  
+  .skills {
+    order: 3;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    padding-top: 20px;
+  }
+  
+  #outer {
+    flex-direction: column;
+    align-content: center;
+  }
+
+  .project {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) { 
+  h1 {
+    font-size: 3em;
+  } 
+
+  h3 {
+    margin: 16px;
+  }
+  
+  .project p {
+    font-size: 14px;
+  }
+
+  @keyframes slide-in {
+    from {transform: translate(-250px)}
+    to {transform: translate(0)}
+  }
+}
+
+@media only screen and (max-width: 500px) {
+}
+
+
+@media only screen and (max-width: 380px) {
+  header> .flex {
+    font-size: .7em;
+  }
+
+  h1 {
+    font-size: 2.5em;
+  }
+
+  h2 {
+    font-size: 1.25em;
+  }
+}
+
+
+
+
+
+
+
+
+
