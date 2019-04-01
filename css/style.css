@@ -1,10 +1,19 @@
 body {
     margin: 0 auto;
     background-color: #222222;
+    height: 100vh;
+    overflow-y: hidden;
 }
 
 .column {
     flex-direction: column;
+}
+
+.content {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .flex {
@@ -12,69 +21,65 @@ body {
 }
 
 h1 {
+    font-family: 'Megrim', cursive;
+    font-size: 5rem;
     text-align: center;
+    color: #FFE400;
 }
 
 h2 {
-    color: #747474;    
-    font-family: 'Megrim', cursive;
-    font-size: 1.75em;
-    cursor: pointer;
-    margin: 15px;
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+h2, h3 {
+    font-family: 'Poiret One', cursive;
+    text-align: center;
+    color: #747474;
+    text-shadow: black 1px 1px 1px;
 }
 
 header {
-    width: 25%;
+    width: 100vw;
     justify-content: space-evenly;
 }
 
-.home {
-    display: flex;
-    justify-content: flex-end;
-    height: 15%;
-}
-
-.main {
-    height: 85%;
+.hide {
+    display: none;
 }
 
 .outer {
-    flex-wrap: wrap;
-    height: 100vh;
+    height: 100%;
+    width: 100vw;
+    position: relative;
 }
 
-section {
+p {
+    font-family: 'Poiret One', cursive;
     padding: 15px;
+    line-height: 1.5;
+    color: #44FCFB;
 }
 
 span {
-    width: 100px;
-    padding: 15px;
-    margin: 15px 15px 15px 0;
-    font-family: 'Abril Fatface', cursive;
-    font-size: 1.5em;
-    justify-content: flex-end;
+    width: 20%;
+    padding: 10px;
+    background-color: #747474;
+    font-family: 'Anton', sans-serif;
+    justify-content: center;
     align-items: center;
-    box-shadow: 5px 5px 5px black;
     cursor: pointer;
 }
 
+span:first-child {
+    font-family: 'Megrim', cursive;
+    width: 10%;
+}
+
 span:hover {
-    width: 125px;
+    background-color: #FC4445;
 }
 
-span:nth-child(1) {
-    background-color: #FF642F;
-}
-
-span:nth-child(2) {
-    background-color: #3FEEE6;
-}
-
-span:nth-child(3) {
-    background-color: #FFE400;
-}
-
-span:nth-child(4) {
-    background-color: #1AE294;
-}
