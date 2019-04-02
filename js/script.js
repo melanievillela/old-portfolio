@@ -1,3 +1,35 @@
+const nav = $(".nav");
+
+nav.click(function() {
+    switch($(this).html()) {
+        case "MV":               
+            $(".content").addClass("hide");
+            $("#main").removeClass("hide");
+            break;
+        case "About":               
+            $(".content").addClass("hide");
+            $("#about").removeClass("hide");
+            break;
+        case "Skills":               
+            $(".content").addClass("hide");
+            $("#skills").removeClass("hide");
+            break;
+        case "Projects":               
+            $(".content").addClass("hide");
+            $("#projects").removeClass("hide");
+            break;
+        case "Contact":               
+            $(".content").addClass("hide");
+            $("#contact").removeClass("hide");
+            break;
+    }
+
+    console.log($(this).html())
+});
+
+console.log($(".nav"))
+
+/*
 //Resize Font Awesome icons depending on screensize
 window.addEventListener("resize", resizeScreen);
 
@@ -75,3 +107,4 @@ window.setInterval(changeColors, 300);
 
 resizeScreen();
 closeModal();
+*/
