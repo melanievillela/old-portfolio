@@ -1,5 +1,5 @@
+//Header navbar functionality
 const nav = $(".nav");
-
 nav.click(function() {
     switch($(this).html()) {
         case "MV":               
@@ -23,11 +23,19 @@ nav.click(function() {
             $("#contact").removeClass("hide");
             break;
     }
-
-    console.log($(this).html())
 });
 
-console.log($(".nav"))
+//Slider carasoul initialization
+new Glider(document.querySelector('.glider'), {
+    slidesToShow: 1,
+    dots: '#dots',
+    draggable: true,
+    arrows: {
+      prev: '.glider-prev',
+      next: '.glider-next'
+    }
+});
+
 
 /*
 //Resize Font Awesome icons depending on screensize

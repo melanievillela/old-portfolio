@@ -5,11 +5,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta http-equiv="x-ua-compatible" content="it=edge">
 	<title>Melanie Villela</title>
-	<link rel="stylesheet" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Anton|Megrim|Poiret+One" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/glider.css" type="text/css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+	<!--Navigation-->
 	<header class="flex">
 		<span class="flex nav">MV</span>
 		<span class="flex nav">About</span>
@@ -18,11 +20,13 @@
 		<span class="flex nav">Contact</span>
 	</header>
 	<section class="outer flex column">
+		<!--Landing Page-->
 		<div class="content" id="main">
 			<h1>MELANIE VILLELA</h1>
 			<h2>Front End Developer</h2>
 			<h3>Houston, Texas</h3>
 		</div>
+		<!--About-->
 		<div class="content hide" id="about">
 			<p>
 				Hello World! Just kidding. I'm about as tired seeing that phrase as I am writing it. Seriously though welcome to my online portfolio. 
@@ -34,27 +38,52 @@
 				have taken online courses from are Wes Bos and Brad Traversy.
 			</p>
 		</div>
-		<div class="content hide flex" id="skills">
+		<!--Skills-->
+		<div class="content hide flex column" id="skills">
 			<div class="skill">HTML5</div>
 			<div class="skill">CSS3</div>
 			<div class="skill">Javascript</div>
 			<div class="skill">JQuery</div>
 			<div class="skill">React</div>
 			<div class="skill">Python</div>
+			<div class="skill">Node</div>
 			<div class="skill">Photoshop</div>
 			<div class="skill">Illustrator</div>
-
 		</div>
-		<div class="content hide" id="projects">
-				<p>PROJECTS</p>
+		<!--Projects-->
+		<div class="content hide flex column" id="projects">
+			<!--Image Carasoule-->
+			<div class="glider-contain">
+				<div class="glider">
+					<div><img src="img/fitness-classes.png" alt="fitness-classes-png"/></div>
+					<div><img src="img/houston-art-crawl.png" alt="houston-art-crawl-png"/></div>
+					<div><img src="img/houston-eats.png" alt="houston-eats-png"/></div>
+					<div><img src="img/spic-span.png" alt="spic-span-png"/></div>
+					<div><img src="img/to-do.png" alt="to-do-png"/></div>
+					<div><img src="img/pot-luck.png" alt="pot-luck-png"/></div>
+					<div><img src="img/restaurant-picker.png" alt="restaurant-picker-png"/></div>
+					<div><img src="img/little-tikka.png" alt="little-tikka-png"/></div>
+					<div><img src="img/NASA-bday.png" alt="NASA-bday-png"/></div>
+					<div><img src="img/timezones.png" alt="US-timezones-png"/></div>
+					<div><img src="img/memory-game.png" alt="memory-game-png"/></div>
+				</div>		
+				<button role="button" aria-label="Previous" class="glider-prev">«</button>
+				<button role="button" aria-label="Next" class="glider-next">»</button>
+				<div role="tablist" class="dots"></div>
+			</div>
+			<!--Image Summary-->
+			<div class="project-summary">
 
+			</div>
 		</div>
+
+
 		<div class="content hide" id="contact">
 				<p>CONTACT</p>
 
 		</div>
-	</section>	
-			
+	</section>
+<script src="./js/glider.js"></script>			
 </body>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <script src="./js/script.js"></script>
