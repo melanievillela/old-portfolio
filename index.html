@@ -39,16 +39,17 @@
 			</p>
 		</div>
 		<!--Skills-->
-		<div class="content hide flex column" id="skills">
-			<div class="skill">HTML5</div>
-			<div class="skill">CSS3</div>
-			<div class="skill">Javascript</div>
-			<div class="skill">JQuery</div>
-			<div class="skill">React</div>
-			<div class="skill">Python</div>
-			<div class="skill">Node</div>
-			<div class="skill">Photoshop</div>
-			<div class="skill">Illustrator</div>
+		<div class="content hide flex" id="skills">
+			<div class="skill flex column">HTML5</div>
+			<div class="skill flex column">CSS3</div>
+			<div class="skill flex column">Javascript</div>
+			<div class="skill flex column">JQuery</div>
+			<div class="skill flex column">React</div>
+			<div class="skill flex column">Python</div>
+			<div class="skill flex column">Node</div>
+			<div class="skill flex column">Git</div>
+			<div class="skill flex column">Photoshop</div>
+			<div class="skill flex column">Illustrator</div>
 		</div>
 		<!--Projects-->
 		<div class="content hide flex column" id="projects">
@@ -76,11 +77,32 @@
 
 			</div>
 		</div>
-
-
-		<div class="content hide" id="contact">
-				<p>CONTACT</p>
-
+		<!--Contact-->
+		<div class="content hide flex column" id="contact">
+			<div class="flex links">
+				<a href="https://www.linkedin.com/in/melanie-villela-62381574/" target="_blank"><i class="fab fa-linkedin fa-5x"></i></a>
+				<a href="https://github.com/melanievillela/" target="_blank"><i class="fab fa-github fa-5x"></i></a>
+			</div>
+			<form id="ajax-contact" method="post" action="mailer.php">
+					<div class="field flex column">
+						<label for="name">Name:</label><br/>
+						<input type="text" id="name" name="name" required>
+					</div>
+				
+					<div class="field flex column">
+						<label for="email">Email:</label><br/>
+						<input type="email" id="email" name="email" required>
+					</div>
+				
+					<div class="field flex column">
+						<label for="message">Message:</label><br/>
+						<textarea id="message" name="message" required></textarea>
+					</div>
+				
+					<div class="field">
+						<button type="submit">Send</button>
+					</div>
+				</form>
 		</div>
 	</section>
 <script src="./js/glider.js"></script>			
