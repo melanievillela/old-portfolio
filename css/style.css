@@ -97,6 +97,16 @@ label {
     font-family: 'Poiret One', cursive;
 }
 
+.level {
+    width: 100%;
+}
+
+.level > h3 {
+    font-size: 1rem;
+    width: 33%;
+    margin: 5px 0;
+}
+
 .links {
     width: 100%;
     justify-content: space-evenly;
@@ -126,20 +136,18 @@ p {
 
 .skill {
     font-family: 'Poiret One', cursive;
-    width: 90px;
-    height: 90px;
-    background-color: #F0B67F;
-    border-radius: 45px;
+    height: 5%;
+    background-color: #FC4445;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin: 5px;
+    margin: 2.5px 0;
+    padding: 5px;
 }
 
 #skills {
-    flex-wrap: wrap;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: flex-start;
     font-weight: bold;
 }
 
