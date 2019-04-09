@@ -1,41 +1,41 @@
+import projects from './projects.js';
+console.log(projects)
 //Header navbar functionality
 const nav = $(".nav");
 nav.click(function() {
     switch($(this).html()) {
-        case "MV":               
+        case "MV":       
+            $(".content").removeClass("show");        
             $(".content").addClass("hide");
             $("#main").removeClass("hide");
+            $("#main").addClass("show");
             break;
-        case "About":               
+        case "About":   
+            $(".content").removeClass("show");    
             $(".content").addClass("hide");
             $("#about").removeClass("hide");
+            $("#about").addClass("show");
             break;
-        case "Skills":               
+        case "Skills":  
+            $(".content").removeClass("show");        
             $(".content").addClass("hide");
             $("#skills").removeClass("hide");
+            $("#skills").addClass("show");
             break;
-        case "Projects":               
+        case "Projects": 
+            $(".content").removeClass("show");            
             $(".content").addClass("hide");
             $("#projects").removeClass("hide");
+            $("#projects").addClass("show");
             break;
-        case "Contact":               
+        case "Contact":    
+            $(".content").removeClass("show");        
             $(".content").addClass("hide");
             $("#contact").removeClass("hide");
+            $("#contact").addClass("show");
             break;
     }
 });
-
-//Slider carasoul initialization
-new Glider(document.querySelector('.glider'), {
-    slidesToShow: 1,
-    dots: '#dots',
-    draggable: true,
-    arrows: {
-      prev: '.glider-prev',
-      next: '.glider-next'
-    }
-});
-
 
 /*
 //Resize Font Awesome icons depending on screensize
