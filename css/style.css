@@ -104,7 +104,16 @@ header {
 
 .hide {
     opacity: 0;
-    transition: opacity 2s;
+    transition: opacity 1.5s;
+}
+
+.hide-init {
+    display: none;
+}
+
+img {
+    height: auto;
+    width: 100%;
 }
 
 .intermediate {
@@ -146,8 +155,9 @@ p {
     color: #F0B67F;
 }
 
-#projects {
-    align-items: center;
+#project-images {
+    height: 50%;
+    width: 100%;
 }
 
 .project-summary {
@@ -157,7 +167,7 @@ p {
 
 .show {
     opacity: 100;
-    transition: opacity 2s;
+    transition: opacity 1.5s;
 }
 
 .skill {
