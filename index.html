@@ -7,6 +7,7 @@
 	<title>Melanie Villela</title>
 	<link href="https://fonts.googleapis.com/css?family=Anton|Megrim|Poiret+One" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -26,7 +27,7 @@
 			<h3>Houston, Texas</h3>
 		</div>
 		<!--About-->
-		<div class="content hide hide-init" id="about">
+		<div class="content remove" id="about">
 			<p>
 				Hello World! Just kidding. I'm about as tired seeing that phrase as I am writing it. Seriously though welcome to my online portfolio. 
 				I'm from Houston, Texas which is where I currently live. I'm constantly trying to improve myself and love learning new technologies.
@@ -38,7 +39,7 @@
 			</p>
 		</div>
 		<!--Skills-->
-		<div class="content hide flex column hide-init" id="skills">
+		<div class="content flex column remove" id="skills">
 			<div class="flex level"><h3 style="color: #FFA69E">Beginner</h3><h3 style="color: #F0B67F">Intermediate</h3><h3 style="color: #FC4445">Expert</h3></div>
 			<div class="skill flex column expert">HTML5</div>
 			<div class="skill flex column expert">CSS3</div>
@@ -52,16 +53,18 @@
 			<div class="skill flex column expert">Illustrator</div>
 		</div>
 		<!--Projects-->
-		<div class="content hide flex column hide-init" id="projects">
-			<div class="flex column" id="project-images">
-				<img src="">				
+		<div class="content flex column remove" id="projects">
+			<div class="main-carousel">
+				<div class="carousel-cell"><img data-flickity-lazyload="./img/fitness-classes-s.png" /></div>
+				<div class="carousel-cell">...</div>
+				<div class="carousel-cell">...</div>				
 			</div>
 			<div class="flex column" id="project-descriptions">
 				
 			</div>
 		</div>
 		<!--Contact-->
-		<div class="content hide flex column hide-init" id="contact">
+		<div class="content flex column remove" id="contact">
 			<div class="flex links">
 				<a href="https://www.linkedin.com/in/melanie-villela-62381574/" target="_blank"><i class="fab fa-linkedin fa-5x"></i></a>
 				<a href="https://github.com/melanievillela/" target="_blank"><i class="fab fa-github fa-5x"></i></a>
@@ -90,5 +93,6 @@
 	</section>
 </body>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 <script src="./js/script.js"></script>
 </html>
