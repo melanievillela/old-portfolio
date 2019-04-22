@@ -140,6 +140,12 @@ label {
     margin: 5px 0;
 }
 
+li {
+    font-family: 'Poiret One', cursive;
+    color: #222222;
+    margin: 15px;
+}
+
 .links {
     width: 100%;
     justify-content: space-evenly;
@@ -173,10 +179,6 @@ p {
     color: #FC4445;
     margin: 15px 0;
     text-shadow: none;
-}
-
-.project p {
-    color: #222222;
 }
 
 .project span {
@@ -240,9 +242,48 @@ span:hover {
     background-color: #FC4445;
 }
 
+ul {
+    flex-wrap: wrap;
+    padding-left: 15px;
+    justify-content: center;
+    font-weight: bold;
+}
+
 @media only screen and (max-width: 450px) {
     .project {
         width: 80%;
         height: auto;
+    }
+}
+
+@media only screen and (min-width: 500px) {
+    p {
+        font-size: 1.25em;
+    }
+
+    #about > p {
+        margin: 25px;
+    }
+
+    .level > h3 {
+        font-size: 1.25rem;
+    }
+
+    .project {
+        width: 40%;
+    }
+
+    .project:nth-child(6) {
+        order: 100;
+    }
+
+    .project:nth-child(7) {
+        order: 50;
+    }
+
+    #projects {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
     }
 }

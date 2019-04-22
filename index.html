@@ -20,7 +20,7 @@
 	</header>
 	<section class="outer flex column">
 		<!--Landing Page-->
-		<div class="content" id="main">
+		<div class="content flex column" id="main">
 			<h1>MELANIE VILLELA</h1>
 			<h2>Front End Developer</h2>
 			<h3>Houston, Texas</h3>
@@ -62,49 +62,117 @@
 		<!--Projects-->
 		<div class="content flex column remove" id="projects">
 			<div class="project">
-				<img src="img/fitness-classes.png" alt="fitness-classes-png"/>
-				<h3>Lotus Fitness</h3>
-				<p>
-					This is a site I created for a customer that owned a small athletic club. It was created with React and Firebase.
-				</p>
+				<img src="img/dumpy-house-buyers.png" alt="dumpy-house-buyers-png"/>
+				<h3>Dumpy House Buyers</h3>
+				<ul class="flex">
+					<li>Javascript</li>
+					<li>Materialize</li>
+				</ul>
 				<span class="flex">
-					<a href="https://github.com/melanievillela/fitness" target="_blank">Github</a>				
-					<a href="https://simple-fitness-classes.herokuapp.com/" target="_blank">Live</a>
+					<a href="https://github.com/melanievillela/dumpy-house-buyers/tree/No-React" target="_blank">Github</a>				
 				</span>
 			</div>
-			<div class="project"></div>
-			<div class="project"></div>
-			<div class="project"></div>
-			<div class="project"></div>
-
+			<div class="project">
+				<img src="img/fitness-classes.png" alt="fitness-classes-png"/>
+				<h3>Lotus Fitness</h3>
+				<ul class="flex">
+					<li>React</li>
+					<li>Firebase</li>
+					<li>Materialize</li>
+				</ul>
+				<span class="flex">
+					<a href="https://github.com/melanievillela/fitness" target="_blank">Github</a>				
+				</span>
+			</div>
+			<div class="project">
+				<img src="img/houston-art-crawl.png" alt="houston-art-crawl-png"/>
+				<h3>Houston Art Crawl</h3>
+				<ul class="flex">
+					<li>Javascript</li>
+					<li>Materialize</li>
+				</ul>
+				<span class="flex">
+					<a href="https://github.com/melanievillela/art-crawl" target="_blank">Github</a>				
+				</span>
+			</div>
+			<div class="project">
+				<img src="img/houston-eats.png" alt="houston-eats-png"/>
+				<h3>Houston Eats Mexican</h3>
+				<ul class="flex">
+					<li>React</li>
+					<li>Yelp API</li>
+					<li>Google Maps API</li>
+				</ul>
+				<span class="flex">
+					<a href="https://github.com/melanievillela/houston-eats-react" target="_blank">Github</a>				
+				</span>
+			</div>
+			<div class="project">
+				<img src="img/NASA-bday.png" alt="NASA-birthday-png"/>
+				<h3>NASA Birthday Image</h3>
+				<ul class="flex">
+					<li>Javascript</li>
+					<li>NASA APOD API</li>
+				</ul>
+				<span class="flex">
+					<a href="https://github.com/melanievillela/nasa-apod-birthday" target="_blank">Github</a>				
+				</span>
+			</div>
+			<div class="project">
+				<img src="img/little-tikka.png" alt="little-tikka-png"/>
+				<h3>Little Tikka</h3>
+				<ul class="flex">
+					<li>HTML</li>
+					<li>CSS</li>
+					<li>Parallax Scrolling</li>
+				</ul>
+				<span class="flex">
+					<a href="https://github.com/melanievillela/Little-Tikka" target="_blank">Github</a>				
+				</span>
+			</div>
+			<div class="project">
+				<img src="img/invitations.png" alt="invitations-png"/>
+				<h3>Birthday Invitations</h3>
+				<ul class="flex">
+					<li>Photoshop</li>
+					<li>Illustrator</li>
+				</ul>
+			</div>
+			<div class="project">
+				<img src="img/medel.png" alt="medel-family-png"/>
+				<h3>Medel Family Portrait</h3>
+				<ul class="flex">
+					<li>Photoshop</li>
+					<li>Illustrator</li>
+				</ul>
+			</div>
 		</div>
-
 		<!--Contact-->
 		<div class="content flex column remove" id="contact">
 			<div class="flex links">
 				<a href="https://www.linkedin.com/in/melanie-villela-62381574/" target="_blank"><i class="fab fa-linkedin fa-5x"></i></a>
 				<a href="https://github.com/melanievillela/" target="_blank"><i class="fab fa-github fa-5x"></i></a>
 			</div>
-			<form id="ajax-contact" method="post" action="mailer.php">
-					<div class="field flex column">
-						<label for="name">Name:</label><br/>
-						<input type="text" id="name" name="name" required>
-					</div>
-				
-					<div class="field flex column">
-						<label for="email">Email:</label><br/>
-						<input type="email" id="email" name="email" required>
-					</div>
-				
-					<div class="field flex column">
-						<label for="message">Message:</label><br/>
-						<textarea id="message" name="message" required></textarea>
-					</div>
-				
-					<div class="field">
-						<button type="submit">Send</button>
-					</div>
-				</form>
+			<form action="https://formspree.io/melanienvillela@gmail.com" method="POST">
+				<div class="field flex column">
+					<label for="name">Name:</label><br/>
+					<input type="text" id="name" name="name" required>
+				</div>
+			
+				<div class="field flex column">
+					<label for="email">Email:</label><br/>
+					<input type="email" id="email" name="email" required>
+				</div>
+			
+				<div class="field flex column">
+					<label for="message">Message:</label><br/>
+					<textarea id="message" name="message" required></textarea>
+				</div>
+			
+				<div class="field">
+					<button type="submit">Send</button>
+				</div>
+			</form>
 		</div>
 	</section>
 </body>
