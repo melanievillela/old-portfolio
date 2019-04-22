@@ -1,5 +1,13 @@
-.arrow {
-    position: absolute;
+a {
+    color: #FC4445;
+    font-family: 'Poiret One', cursive;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+span a {
+    margin: 15px;
+    font-weight: bold;
 }
 
 body {
@@ -72,11 +80,6 @@ form {
     width: 80%;
 }
 
-.glider-contain {
-    width: 80%;
-    margin: 25px;
-}
-
 h1 {
     font-family: 'Megrim', cursive;
     font-size: 5rem;
@@ -104,11 +107,16 @@ header {
     width: 100vw;
     height: 50px;
     justify-content: space-evenly;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    overflow: hidden;
+    background-color: #222222;
 }
 
 img {
-    height: auto;
     width: 100%;
+    height: auto;
 }
 
 .intermediate {
@@ -143,11 +151,45 @@ label {
     position: relative;
 }
 
+#about > p {
+    margin: 0;
+}
+
 p {
     font-family: 'Poiret One', cursive;
     padding: 15px;
     line-height: 1.5;
     color: #F0B67F;
+}
+
+.project {
+    background-color: #FCF1E7;
+    border: 10px solid #FFA69E;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.project h3 {
+    color: #FC4445;
+    margin: 15px 0;
+    text-shadow: none;
+}
+
+.project p {
+    color: #222222;
+}
+
+.project span {
+    width: 100%;
+}
+
+.project span:hover {
+    background-color: #FCF1E7;
+}
+
+#projects {
+    align-items: center;
+    height: auto;
 }
 
 .remove {
@@ -163,6 +205,10 @@ p {
     margin: 2.5px 0;
 }
 
+section {
+    margin-top: 50px;
+}
+
 #skills {
     justify-content: space-evenly;
     align-items: flex-start;
@@ -172,7 +218,6 @@ p {
 span {
     color: #FCF1E7;
     width: 20%;
-    padding: 10px;
     font-family: 'Anton', sans-serif;
     justify-content: center;
     align-items: center;
@@ -195,10 +240,9 @@ span:hover {
     background-color: #FC4445;
 }
 
-.carousel-cell {
-    width: 100%;
-    height: 50%;
-    margin-right: 10px;
-    background: #8C8;
-    border-radius: 5px;
-  }
+@media only screen and (max-width: 450px) {
+    .project {
+        width: 80%;
+        height: auto;
+    }
+}

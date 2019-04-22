@@ -27,9 +27,19 @@ nav.click(function() {
     }
 });
 
-//Image carousel
-$(".main-carousel").flickity({
-    // options
-    cellAlign: "left",
-    contain: true
+//Show and close modal
+let projects = $(".project");
+
+projects.each(function() {
+    $(this).on("click", function() {
+        if($(window).width() <= 500) {
+            $(this).children(".modal").height("100vh");
+            $(this).children(".modal").css("position", "fixed");
+        }
+        $(this).children(".modal").removeClass("hide");
+        $(this).children(".modal").children(".close").removeClass("hide");
+        $(this).children(".modal").children(".close").on("click", function() {
+            $(this).parent().addClass("remove");
+        })
+    });
 });
