@@ -152,6 +152,10 @@ li {
     justify-content: space-evenly;
 }
 
+#main {
+    justify-content: flex-start;
+}
+
 .outer {
     height: 100%;
     width: 100vw;
