@@ -3,11 +3,12 @@ a {
     font-family: 'Poiret One', cursive;
     text-decoration: none;
     cursor: pointer;
+    text-align: center;
+    font-weight: bold;
 }
 
 span a {
     margin: 15px;
-    font-weight: bold;
 }
 
 body {
